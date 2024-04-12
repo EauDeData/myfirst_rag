@@ -53,7 +53,7 @@ query_prompt = ("Context: {context_str}.\n"
                 "Query: {query_str}\n"
                 "Answer:")
 query_engine.update_prompts({'response_synthesizer:text_qa_template': PromptTemplate(query_prompt)})
-qs = ["Can you summarize how "]
+qs = ["En que párrafo y página hubo una errata?", "Quien es jefe de recursos humanos?", "Cual es el nombre del adjudicatorio?"]
 print('\n\n--------------QUERIES----------------')
 
 max_tries = 10
